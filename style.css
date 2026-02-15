@@ -109,7 +109,6 @@ section{
     -webkit-text-fill-color:transparent;
 }
 
-/* ABOUT */
 #about{
     background-size:cover;
     background-position:center;
@@ -149,6 +148,21 @@ section{
     line-height:1.9;
     color:#cbd5e1;
 }
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:20px 0;
+    border:4px solid #38bdf8;
+    box-shadow:0 10px 25px rgba(0,0,0,0.6);
+    transition:0.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+}
+
 
 /* FAMILY */
 #family{
@@ -325,12 +339,12 @@ section{
     display: inline-block;
 }
 
-/* Sarlavha tagidagi chiziqcha */
+
 .section-title::after {
     content: '';
     width: 60px;
     height: 4px;
-    background: #3b82f6; /* Moviy rang */
+    background: #3b82f6;
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -338,14 +352,12 @@ section{
     border-radius: 2px;
 }
 
-/* Kartalar joylashuvi (Grid) */
 .goals-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-/* Karta dizayni */
 .goal-card {
     background: rgba(255, 255, 255, 0.05); /* Shaffof fon */
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -355,7 +367,6 @@ section{
     backdrop-filter: blur(10px);
 }
 
-/* Sichqoncha borganda effekt */
 .goal-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
@@ -377,11 +388,10 @@ section{
 .goal-card p {
     font-size: 16px;
     line-height: 1.6;
-    color: #cbd5e1; /* Och kulrang matn */
+    color: #cbd5e1; 
 }
 
 
-/* FOOTER */
 footer{
     background:#020617;
     color:#94a3b8;
@@ -390,7 +400,6 @@ footer{
     font-size:14px;
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
 
     nav{
